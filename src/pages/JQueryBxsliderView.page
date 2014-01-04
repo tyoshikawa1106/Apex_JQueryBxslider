@@ -1,0 +1,60 @@
+<apex:page docType="html-5.0">
+    
+    <apex:includeScript value="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" />
+    <apex:includeScript value="{!URLFOR($Resource.JQueryBxslider, 'jquery.bxslider.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.JQueryBxslider, 'jquery.bxslider.min.js')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.JQueryBxslider, 'jquery.bxslider.css')}"/>
+    
+    <style type="text/css">
+        #page {
+            width: 980px;
+            margin: 0 auto;
+        }
+        
+        #pageBody {
+            margin-top: 30px;
+        }
+        
+        #pageBody .mainVisual ul {
+            margin-top: -5px;
+            margin-left: -20px;
+            padding: 0;
+            list-style: none;
+        }
+        
+        #pageBody .mainVisual ul li {
+            position: relative;
+        }
+    </style>
+    
+    <script type="text/javascript">
+        var $j = jQuery.noConflict();
+        $j(document).ready(function(){
+            $j('.bxslider').bxSlider({
+                auto: true,
+                speed: 1000,
+                pause: 8000
+            });
+        });
+    </script>
+    
+    <apex:form id="form">
+        <div id="page">
+            <div id="pageBody">
+                <section class="mainVisual">
+                    <ul class="bxslider">
+                        <li>
+                            <apex:image value="{!URLFOR($Resource.JQueryBxsliderViewImages, 'Saasy.jpg')}" alt="" width="980" height="500" />
+                        </li>
+                        <li>
+                            <apex:image value="{!URLFOR($Resource.JQueryBxsliderViewImages, 'MeetingPlace.jpg')}" alt="" width="980" height="500" />
+                        </li>
+                        <li>
+                            <apex:image value="{!URLFOR($Resource.JQueryBxsliderViewImages, 'DevZone.jpg')}" alt="" width="980" height="500" />
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </apex:form>
+</apex:page>
