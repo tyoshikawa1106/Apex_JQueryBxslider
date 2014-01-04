@@ -2,7 +2,6 @@
     
     <apex:includeScript value="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" />
     <apex:includeScript value="{!URLFOR($Resource.JQueryBxslider, 'jquery.bxslider.js')}" />
-    <apex:includeScript value="{!URLFOR($Resource.JQueryBxslider, 'jquery.bxslider.min.js')}" />
     <apex:stylesheet value="{!URLFOR($Resource.JQueryBxslider, 'jquery.bxslider.css')}"/>
     
     <style type="text/css">
