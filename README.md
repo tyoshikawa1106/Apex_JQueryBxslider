@@ -8,4 +8,4 @@ JQueryのBxsliderをVisualforceページで動かしてみました。
 <img src="http://cdn-ak.f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20140104/20140104154551.png" />  
 
 > Package URL  
-> https://login.salesforce.com/packaging/installPackage.apexp?p0=04ti0000000L8Yg  
+> https://login.salesforce.com/packaging/installPackage.apexp?p0=04ti0000000L8Yl  
