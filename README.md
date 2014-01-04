@@ -1,4 +1,4 @@
-Visualforce_JQueryBxslider
+Apex_JQueryBxslider
 ==========================
 
 JQueryのBxsliderをVisualforceページで動かしてみました。  
